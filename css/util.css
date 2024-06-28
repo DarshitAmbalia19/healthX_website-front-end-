@@ -1,0 +1,101 @@
+:root{
+    --primary: #609706;
+    --dark:#161616;
+    --pure:#ffffff;
+    --ternary:#385305;
+    --light:#F2F2F2;
+}
+.a {
+    font-size: 18px;
+    color: #e1e1e1;
+    font-family: inherit;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  .a:focus,
+  .a:hover {
+    color: var(--primary);
+    opacity: 0.9;
+  }
+  
+  .a:focus:after,
+  .a:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  .a:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--primary);
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+.flex{
+    display:flex;
+}
+.items-center{
+    align-items:center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.left-padding{
+    padding-left:10rem;
+}
+
+.btn{
+    background-color: #609706;
+    color: var(--pure);
+    padding:0.8rem 3rem;
+    font-size:1rem;
+    font-weight:600;
+    border:2px solid transparent;
+    outline:none;
+    cursor:pointer;
+    text-transform: uppercase;
+    transition:all .3s ease;
+    border-radius: 5px;
+}
+
+.btn-hvr:hover{
+    background:transparent;
+    border-color: var(--primary);
+    color:var(--primary);
+}
+.btn-secondary{
+    padding:0.8rem 3rem;
+    font-size:1rem;
+    font-weight:600;
+    border:2px solid transparent;
+    outline:none;
+    cursor:pointer;
+    text-transform: uppercase;
+    transition:all .3s ease;
+    border-radius: 5px;
+    background:transparent;
+    border-color: var(--primary);
+    color:var(--primary);
+}
+.btn-secondary:hover{
+    
+    background-color: #609706;
+    color: var(--pure);
+    border-color: var(--pure);
+}
